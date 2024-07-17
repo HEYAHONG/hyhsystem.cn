@@ -1,0 +1,5 @@
+- github:[https://github.com/HEYAHONG](https://github.com/HEYAHONG)
+- gitee:[https://gitee.com/HEYAHONG](https://gitee.com/HEYAHONG)
+- gitea:[http://gitea.hyhsystem.cn:3000](http://gitea.hyhsystem.cn:3000)
+- mediawiki:[http://mediawiki.hyhsystem.cn](http://mediawiki.hyhsystem.cn)
+- 自签https CA证书（用于使用https访问本网站,可自行选择是否安装）:[hyhsystem.cn](http://hyhsystem.cn/hyhsystem.cn.ca.crt)
