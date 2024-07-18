@@ -4,7 +4,8 @@ hyhsystem.cn网站源代码
 
 # 网站
 
-- [@](@)：作为子域名为www或不使用子域名时的网站源代码。
+- [@](@)：作为子域名为www或不使用子域名时的网站源代码。网址：[http://hyhsystem.cn](http://hyhsystem.cn)
+- [docs](docs):作为子域名为docs的网站源代码,[github pages](https://heyahong.github.io)的备份访问方式。网址:[http://docs.hyhsystem.cn](http://docs.hyhsystem.cn)
 
 注意：为适应在一个服务器上搭建多个虚拟主机（可使用同一端口使用域名区分不同虚拟主机），通常部署完成后会启动监听非http端口的docker容器,因此，如需使用http端口，需要配置nginx反向代理将请求转发至相应网站的端口。
 
@@ -17,6 +18,11 @@ hyhsystem.cn网站源代码
 ## make
 
 由于采用了make作为主要构建工具，需要保证make命令能正常运行。
+
+## git
+
+由于采用了git作为更新某些子模块的工具，需要保证git命令能正常运行。
+
 
 ## coreutils
 
