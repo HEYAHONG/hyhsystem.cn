@@ -13,3 +13,6 @@ services:
       - ntp
     ports:
       - "123:123/udp"
+    devices:
+      - /dev/rtc:/dev/rtc
+
