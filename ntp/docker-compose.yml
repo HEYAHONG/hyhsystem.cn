@@ -9,6 +9,7 @@ services:
     image: ntp.hyhsystem.cn
     container_name: ntp.hyhsystem.cn
     restart: always
+    privileged: true
     networks:
       - ntp
     ports:
