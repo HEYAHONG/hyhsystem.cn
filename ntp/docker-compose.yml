@@ -1,0 +1,16 @@
+version: "3"
+
+networks:
+  ntp:
+    external: false
+
+services:
+  server:
+    image: ntp.hyhsystem.cn
+    container_name: ntp.hyhsystem.cn
+    restart: always
+    privileged: true
+    networks:
+      - ntp
+    ports:
+      - "123:123/udp"
