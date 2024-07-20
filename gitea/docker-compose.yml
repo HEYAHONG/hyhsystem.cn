@@ -1,0 +1,18 @@
+version: "3"
+
+networks:
+  gitea:
+    external: false
+
+services:
+  server:
+    image: gitea.hyhsystem.cn
+    container_name: gitea.hyhsystem.cn
+    restart: always
+    volumes:
+      - ./data:/data:rw
+    networks:
+      - gitea
+    ports:
+      - "65182:3000"
+      - "65183:22"
