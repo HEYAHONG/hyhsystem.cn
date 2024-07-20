@@ -14,7 +14,7 @@
 首次访问将进入配置界面，填写要求如下：
 
 - 数据采用 SQLite3,若需要其他数据库类型，可采参考[官网说明](https://docs.gitea.com/installation/install-with-docker)，需要修改[docker-compose.yml](docker-compose.yml)。
-- 服务器域名、基础URL需要填写从外部访问gitea时的配置，如外部访问gitea的服务器域名为gitea.hyhsystem.cn、基础URL为[http://gitea.hyhsystem.cn:3000](http://gitea.hyhsystem.cn:3000 ) , 而不能填写容器的相关配置。基础URL主要影响使用git进行源代码推送与拉取的操作。
+- 基础URL需要填写从外部访问gitea时的配置，如外部访问gitea的服务器的基础URL为[http://gitea.hyhsystem.cn:3000](http://gitea.hyhsystem.cn:3000 ) , 而不能填写容器的相关配置。基础URL主要影响使用git进行源代码推送与拉取的操作。
 - SSH 服务端口需要填写22,填写其他值可能导致docker容器的转发失效。
 - HTTP 服务端口需要填写3000，填写其他值可能导致docker容器的转发失效。
 
