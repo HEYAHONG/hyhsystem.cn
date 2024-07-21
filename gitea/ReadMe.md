@@ -77,7 +77,7 @@ make unpack
 
 链接: https://pan.baidu.com/s/1KvQROA0zB9sTV-8nxGAQSQ 提取码: 8888
 
-将文件夹中的其中一个gitea_data*.tar.gz（一般可直接下载最新的打包数据）下载后，重命名为gitea_data.tar.gz并放入当前文件夹，最后执行解包操作后。
+将文件夹中的其中一个gitea_data*.tar.gz（一般可直接下载最新的打包数据）下载后，重命名为gitea_data.tar.gz并放入当前文件夹，最后执行解包操作后即可访问。
 
 ## 注意事项
 
