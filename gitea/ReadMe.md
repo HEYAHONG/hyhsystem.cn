@@ -71,3 +71,38 @@ make pack
 make unpack
 ```
 
+# 采用gitea.hyhsystem.cn的打包数据
+
+由于gitea.hyhsystem.cn的数据量较大,不适合在git上存储，因此需要单独手动下载。
+
+链接: https://pan.baidu.com/s/1KvQROA0zB9sTV-8nxGAQSQ 提取码: 8888
+
+将文件夹中的其中一个gitea_data*.tar.gz（一般可直接下载最新的打包数据）下载后，重命名为gitea_data.tar.gz并放入当前文件夹，最后执行解包操作后。
+
+## 注意事项
+
+若当前用户不是root用户且不在docker用户组，请自行使用sudo提升权限，否则将操作失败。
+
+### gitea版本问题
+
+通常gitea.hyhsystem.cn采用的是最新版本的gitea,若gitea版本不够新，可能导致无法启动。
+
+因此，当下载最新版打包数据后，需要执行`docker pull gitea/gitea`将拉取最新镜像，然后使用`make clean && make`。
+
+### gitea用户密码问题
+
+默认管理员账号HEYAHONG，为了安全起见用户密码已清除（此时是无法正常登陆gitea的）。
+
+此时可使用密码重置功能，具体如下：
+
+```bash
+#进入已经运行的docker容器
+docker exec -it --user git gitea.hyhsystem.cn bash
+#使用gitea的管理命令修改密码,其中新密码需要需要替换为实际的密码
+gitea admin user change-password --username HEYAHONG --password <新密码>
+#退出容器
+exit
+
+```
+
+ 
