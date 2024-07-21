@@ -87,7 +87,7 @@ make unpack
 
 通常gitea.hyhsystem.cn采用的是最新版本的gitea,若gitea版本不够新，可能导致无法启动。
 
-因此，当下载最新版打包数据后，需要执行`docker pull gitea/gitea`将拉取最新镜像，然后使用`make clean && make`。
+因此，当下载最新版打包数据后，需要执行`docker pull gitea/gitea`将拉取最新镜像，然后使用`make clean && make`重新部署gitea。
 
 ### gitea用户密码问题
 
