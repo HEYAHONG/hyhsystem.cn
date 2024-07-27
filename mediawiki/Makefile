@@ -35,7 +35,7 @@ pack:
 
 unpack:
 	@if [ -f docker-compose.yml ];\
-	then echo  mediawiki is installed(ignored)!;\
+	then echo  "mediawiki is installed(ignored)!";\
 		if [ -f mediawiki_data.tar.gz ];\
 		then echo data is found!;\
 			${MAKE} clean;\
