@@ -1,0 +1,24 @@
+version: "3"
+
+networks:
+  mediawiki:
+    external: false
+
+services:
+  server:
+    image: mediawiki.hyhsystem.cn
+    container_name: mediawiki.hyhsystem.cn
+    environment:
+      - USER_UID=1000
+      - USER_GID=1000
+    restart: always
+    networks:
+      - mediawiki
+    volumes:
+      - ./html/images:/var/www/html/images:rw
+      - ./html/sqlite:/var/www/html/sqlite:rw
+      - ./html/resources/assets:/var/www/html/resources/assets:rw
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - "65184:80"
